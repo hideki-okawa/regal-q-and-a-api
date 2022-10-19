@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2022_10_19_085816) do
-
   create_table "answers", force: :cascade do |t|
     t.integer "questions_id", null: false
     t.text "coomment", null: false

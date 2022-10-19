@@ -1,9 +1,22 @@
 # regal-q-and-a-api
 
-## migrate
+## DB
+### migrate
 
 ```
 $ bundle exec rails db:migrate
+```
+
+### reset
+
+```
+$ bundle exec rails db:migrate:reset
+```
+
+### input sample data
+
+```
+$ bundle exec rails db:seed
 ```
 
 ## format
@@ -11,3 +24,4 @@ $ bundle exec rails db:migrate
 ```
 $ bundle exec rubocop -x
 ```
+
