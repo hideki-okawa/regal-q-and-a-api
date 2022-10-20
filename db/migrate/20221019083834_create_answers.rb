@@ -6,6 +6,8 @@ class CreateAnswers < ActiveRecord::Migration[6.0]
       t.string :user_name, null: false
       t.boolean :is_lawyer, default: false
       t.integer :helpful_count, default: 0
+
+      t.timestamps
     end
   end
 end
