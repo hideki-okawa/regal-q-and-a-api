@@ -6,5 +6,13 @@ module Api
         questions: questions
       }, status: :ok
     end
+
+    def show
+      question = Question.find(params[:id])
+
+      render json: {
+        question: question
+      }, status: :ok
+    end
   end
 end
