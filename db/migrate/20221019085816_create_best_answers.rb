@@ -1,8 +1,8 @@
 class CreateBestAnswers < ActiveRecord::Migration[6.0]
   def change
     create_table :best_answers do |t|
-      t.references :answers, foreign_key: true, null: false
-      t.references :questions, foreign_key: true, null: false
+      t.references :answer, foreign_key: true, null: false
+      t.references :question, foreign_key: true, null: false
 
       t.timestamps
     end
