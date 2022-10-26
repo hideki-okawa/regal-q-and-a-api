@@ -11,7 +11,7 @@
   # 弁護士の解答
   5.times do |m|
     question.answers.build(
-      comment: "[質問#{n+1} 解答#{m+1}]速やかに、今までのやり取りを持って、
+      comment: "[質問#{n + 1} 解答#{m + 1}]速やかに、今までのやり取りを持って、
       ネットではなく面談相談に行ってみるのをお勧めします。
       （支払いについては、現状しないでおきましょう。）",
       user_name: "弁護士太臓",
@@ -23,7 +23,7 @@
   # 回答者の解答
   5.times do |m|
     question.answers.build(
-      comment: "[質問#{n+1} 解答#{m+1}]ありがとうございます。",
+      comment: "[質問#{n + 1} 解答#{m + 1}]ありがとうございます。",
       user_name: "質問し太郎#{n + 1}",
       is_lawyer: false,
     )
