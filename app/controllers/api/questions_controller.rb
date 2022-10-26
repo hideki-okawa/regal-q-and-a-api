@@ -1,7 +1,7 @@
 module Api
   class QuestionsController < ApplicationController
     def index
-      questions = Question.all
+      questions = Question.all.order(id: :desc)
       render json: {
         questions: questions
       }, status: :ok
