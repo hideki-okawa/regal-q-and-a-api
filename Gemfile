@@ -44,6 +44,10 @@ gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
 gem 'rack-cors'
 
+# devise
+gem 'devise'
+gem 'devise_token_auth'
+
 group :development, :test do
   gem 'rails-erd'
 end
